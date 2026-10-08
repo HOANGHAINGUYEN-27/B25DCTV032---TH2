@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thư viện của lớp</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&subset=vietnamese&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <header class="header">
+            <h1>Thư viện của lớp</h1>
+            <button id="btn" aria-label="Đổi chủ đề"> Đổi màu</button>
+            <p>Yêu thích: <strong id="fav-count">0</strong></p>
+        </header>
+        <main>
+            <section class="toolbar" aria-label="Công cụ">
+                <input id="search" type="search" placeholder="Tìm theo tên sách…" aria-label="Tìm theo tên">
+<select id="genre" aria-label="Thể loại">
+    <option value="">Tất cả thể loại</option>
+</select>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<section id="grid" class="grid" aria-label="Danh sách sách"></section>
+<section class="add">
+    <h2>Thêm sách mới</h2>
+<form id="form" novalidate>
+<label>Tên sách
+    <input name="title">
+    <small class="err"></small>
+</label>
+<label>Tác giả
+    <input name="author">
+    <small class="err"></small>
+</label>
+<label>Thể loại
+    <select name="genre">
+        <option value="">-- Chọn --</option>
+    </select>
+    <small class="err"></small>
+</label>
+<label>Năm xuất bản
+    <input name="year" type="number">
+    <small class="err"></small>
+</label>
+<button id="submit-btn" type="submit">Thêm sách</button>
+</form>
+</section>
+</main>
+<footer class="footer"></footer>
+<script src="js/btn.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

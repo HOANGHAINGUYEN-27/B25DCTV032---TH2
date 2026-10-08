@@ -1,0 +1,18 @@
+:root{--ink:#1f2a24;--paper:#f7f5ef;--pine:#2f5d50;--rust:#b4472c;--line:#d8d4c6}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font:16px/1.5 'Noto Serif',Georgia,'Times New Roman',serif}
+.header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:16px 24px;background:var(--pine);color:#fff}
+.header h1{margin:0;font-size:1.6rem}
+main{flex:1;width:100%;max-width:1000px;margin:0 auto;padding:24px 16px}
+input,select,button{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:#fff}
+button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--rust)}
+.grid{display:flex;flex-wrap:wrap;gap:16px}
+.card{flex:1 1 calc(33.333% - 16px);min-width:0;border:1px solid var(--line);border-left:6px solid var(--pine);background:#fff;padding:14px;display:flex;flex-direction:column;gap:4px}
+.card h3{margin:0}.card p{margin:0;color:#555}
+.card .actions{margin-top:auto;padding-top:10px;display:flex;gap:8px}
+.card.fav{border-left-color:var(--rust)}
+.fav-btn.on{background:var(--rust);color:#fff}
+.footer{padding:16px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:700px){.card{flex-basis:100%}}
+.genres{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.genres .on{background:var(--pine);color:#fff}
